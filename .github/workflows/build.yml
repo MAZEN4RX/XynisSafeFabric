@@ -1,10 +1,12 @@
 
+
 name: Build XynisSafeFabric
 
 on:
   workflow_dispatch:
   push:
-    branches: [main]
+    branches:
+      - main
 
 jobs:
   build:
@@ -21,6 +23,8 @@ jobs:
 
       - name: Set up Gradle
         uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.12'
 
       - name: Build mod
         run: gradle build
@@ -30,5 +34,5 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: XynisSafeFabric-JAR
-          path: build/lib
-          s/*.jar
+          path: build/li
+          bs/*.jar
