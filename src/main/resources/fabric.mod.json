@@ -1,0 +1,20 @@
+
+{
+  "schemaVersion": 1,
+  "id": "xynissafefabric",
+  "version": "1.0.0",
+  "name": "Xynis Safe Client",
+  "description": "Simple client-side GUI",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.xynis.client.XynisClient"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.19.3",
+    "minecraft": "1.21.11",
+    "java": ">=21"
+  }
+
+}
